@@ -1,1 +1,0 @@
-# TermSpar.github.io
