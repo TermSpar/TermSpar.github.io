@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Bollinger - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="top-links">
+        <a href="https://github.com/TermSpar" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/benjamin-bollinger" target="_blank">LinkedIn</a>
+        <a href="https://www.youtube.com/@termspar4231" target="_blank">YouTube</a>
+    </header>
 
-<h1>Hebrew Tool - Ben Bollinger</h1>
+    <div class="intro-container">
+        <div class="description">
+            <h1>Benjamin Bollinger</h1>
+            <p>Welcome to my portfolio! Here you will find information about me and the projects I enjoy
+              working on in my spare time.</p>
+        </div>
 
-<button>Default Button</button>
-<a href="#" class="button">Link Button</a>
-<button class="button">Button</button>
-<input id="clickMe" type="button" value="clickme" onclick="loadFile();">
+        <div class="profile-pic">
+            <img src="images/me.jpg" alt="Ben">
+        </div>
 
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                Since graduating from Elmhurst University with a degree in Computer Science, I have been an IT and 
+                software development professional for about two years. My experience includes working in the Django 
+                framework, using Python, Angular, and TypeScript to build reliable and efficient software solutions.
+            </p>
+        </section>
 
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Bible Tools</h3>
+                <p>
+                    This project provides tools for studying the Bible. Right now, it includes a gematria calculator
+                    that doesn't simply work on individual words, but entire passages and books of the Hebrew Bible.
+                </p>
+                <a href="https://termspar.github.io/BibleTools" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+    </div>
 </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<script>
-  function loadFile(){
-    jQuery.get('https://github.com/TermSpar/TermSpar.github.io/blob/main/Genesis.txt', function(data) {
-      alert(data);
-    });
-  }
-</script>
